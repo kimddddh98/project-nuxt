@@ -1,13 +1,13 @@
 <template>
     <div>hello
         <ul>
-            <li>{{data}}</li>
+            <li>{{row}}</li>
         </ul>
     </div>
 
 </template>
 <script lang="ts" setup>
 
-const { data } = await useFetch('/api/hello')
-console.log(data)
+const { data:row } = await useFetch('/api/hello')
+// console.log(data)
 </script>
