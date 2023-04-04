@@ -28,6 +28,9 @@ export const useUserStore = defineStore('user', {
       this.todos.push({item:item,id:this.num,done:false})
       this.double()
     },
+    listSort<T>(item:T[]){
+      return item.sort()
+    }
 
   },
 })
