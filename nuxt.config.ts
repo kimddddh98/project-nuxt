@@ -4,21 +4,8 @@ export default defineNuxtConfig({
   modules: [
   
     '@pinia/nuxt',
-    // '@nuxtjs/style-resources',
+    '@vueuse/nuxt',
   ],
 
-  // styleResources: {
-	// 	scss :[
-	// 		'@/assets/scss/index.scss'
-	// 	]
-	// },
-  // vite: {
-  //   css: {
-  //     preprocessorOptions: {
-  //       scss: {
-  //         additionalData: '@use "@/assets/index.scss" as *;'
-  //       }
-  //     }
-  //   }
-  // }
+
 })

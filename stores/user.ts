@@ -1,4 +1,5 @@
 import {defineStore} from 'pinia'
+import {useStorage} from '@vueuse/core'
 interface ToDo{
   item:string,
   id:number,
@@ -13,8 +14,9 @@ export const useUserStore = defineStore('user', {
   state: () => ({
     num:0 ,
     todos:[] as ToDo[],
-    local:useFetch('/api/hello').data,
+    local:useStorage('info',{storage:'t'}),
     test:{list:['a','c','b']} as items<string>
+    
   }),
   getters: {
  
