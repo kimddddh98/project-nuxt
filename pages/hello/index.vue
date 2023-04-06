@@ -11,3 +11,4 @@
 const { data } = await useFetch('/api/hello')
 // console.log(data)
 </script>
+

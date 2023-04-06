@@ -27,3 +27,11 @@ import {ref} from'vue'
   const todoValue = ref('')
   // console.log(store.todos)
 </script>
+<style lang="scss">
+  input {
+    @include center; // will be resolved as position:absolute....
+  }
+  h3{
+    color: $color;
+  }
+</style>
