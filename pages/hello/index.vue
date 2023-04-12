@@ -8,7 +8,8 @@
 </template>
 <script lang="ts" setup>
 
-const { data } = await useFetch('/api/hello')
-// console.log(data)
+const {data} = await useFetch('/api/hello')
+// const real = data[0]
+// console.log(real)
 </script>
 
