@@ -15,7 +15,7 @@ interface Days{
   id:number,
   day:number
 }
-const {data}= useFetch<Days[]>('/api/hello')
+const {data}= useFetch<Days[]>('/api/days')
 
 </script>
 

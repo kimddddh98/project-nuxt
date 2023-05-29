@@ -1,5 +1,5 @@
 <template>
-  라우터 인덱스
+  데이 index
   <ul>
     <li v-for="days in data"><NuxtLink :to="`/day/${days.day}`"> {{ days.day }}</NuxtLink></li>
     <!-- <li><NuxtLink to="/day/1">1</NuxtLink></li>
@@ -18,6 +18,7 @@ interface Days{
   id:number,
   day:number
 }
-const {data}= useFetch<Days[]>('/api/hello')
+const {data}= useFetch<Days[]>('/api/days')
+// const words = fetch(` http://localhost:3001/words/word=${}'`)
 
 </script>
