@@ -2,13 +2,14 @@
 <template>
   <ul>
     <li v-for="post in posts" :key="post.id">
-      제목 : {{ post.title }}
+      
+      <NuxtLink :to="`/todo/${post.id}`">제목 : {{ post.title }}</NuxtLink>
     </li>
   </ul>
 </template>
 <script setup lang="ts">
-import { useUserStore } from '~~/stores/user';
-import {ref} from'vue'
+// import { useUserStore } from '~~/stores/user';
+// import {ref} from'vue'
 interface Posts{
   id: number
   userId: string,

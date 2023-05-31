@@ -75,6 +75,13 @@
       "title":"게시판 제목",
       "content":"게시판 내용",
       "date":""
+    },
+    {
+      "id": 2,
+      "userId": "admin",
+      "title":"게시판 제목",
+      "content":"게시판 내용",
+      "date":""
     }
   ],
   "reply":[
