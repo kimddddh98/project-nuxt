@@ -31,7 +31,9 @@ function deleteWord(id:number){
   }).then(res=>{
     if(res.ok){
       alert('삭제완료')
-      
+      let newWords = words.value.filter(word=> word.id !== id) 
+      words.value = newWords
+
     }
   })
 }

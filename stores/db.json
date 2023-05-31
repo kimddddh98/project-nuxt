@@ -33,27 +33,6 @@
       "isDone": false
     },
     {
-      "id": 5,
-      "day": 3,
-      "eng": "school",
-      "kor": "학교",
-      "isDone": false
-    },
-    {
-      "id": 6,
-      "day": 3,
-      "eng": "pencil",
-      "kor": "연필",
-      "isDone": false
-    },
-    {
-      "day": "3",
-      "eng": "window",
-      "kor": "창문",
-      "isDone": false,
-      "id": 7
-    },
-    {
       "day": "3",
       "eng": "house",
       "kor": "집",
@@ -87,6 +66,25 @@
       "kor": "사과",
       "isDone": false,
       "id": 12
+    }
+  ],
+  "view": [
+    {
+      "id": 1,
+      "userId": "admin",
+      "title":"게시판 제목",
+      "content":"게시판 내용",
+      "date":""
+    }
+  ],
+  "reply":[
+    {
+      "id":1,
+      "viewId":1,
+      "content":"댓글",
+      "userId": "admin",
+      "date":""
+      
     }
   ]
 }
