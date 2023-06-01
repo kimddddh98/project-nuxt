@@ -12,6 +12,6 @@ interface Posts{
 }
 const route =  useRoute()
 console.log(route.params.id)
-const post = await $fetch<Posts>(`http://localhost:3001/view?id=${route.params.id}`).catch((error) => error.data)
+const post = await $fetch<Posts>(`${import.meta.env.VITE_BASE_URL}/view?id=${route.params.id}`).catch((error) => error.data)
 
 </script>

@@ -9,7 +9,7 @@
 //   // return event.context
 // })
 export default defineEventHandler(async (event) => {
-  const data = await fetch(' http://localhost:3001/days')
+  const data = await fetch(`${import.meta.env.VITE_BASE_URL}/days`)
   const res = await data.json()
   return res
   // const data = await event.context.db.execute('insert into test1 values (123456);');

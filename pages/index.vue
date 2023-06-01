@@ -11,5 +11,5 @@
 import { useUserStore } from "../stores/user"
 
 const store = useUserStore()
-
+console.log(import.meta.env.VITE_BASE_URL)
 </script>

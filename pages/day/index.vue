@@ -19,6 +19,6 @@ interface Days{
   day:number
 }
 const {data}= useFetch<Days[]>('/api/days')
-// const words = fetch(` http://localhost:3001/words/word=${}'`)
+// const words = fetch(` ${import.meta.env.VITE_BASE_URL}/words/word=${}'`)
 
 </script>
